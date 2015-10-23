@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery.inputfilter.js</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.inputfilter.js"></script>
+</head>
+<body>
+    <h1>Demo jquery.inputfilter.js</h1>
+    <blockquote>
+        This demo shows ways to use jquery.inputfilter.js
+    </blockquote>
+    <div>
+        <label for="textbox1">Default settings</label>
+        <input type="text" id="textbox1" />
+    </div>
+    <div>
+        <label for="textbox2">Text only</label>
+        <input type="text" id="textbox2" />
+    </div>
+    <div>
+        <label for="textbox3">Text and enter</label>
+        <textarea id="textbox3"></textarea>
+    </div>
+    <div>
+        <label for="textbox4">Custom chars !#.</label>
+        <input type="text" id="textbox4" />
+    </div>
+    <div>
+        <label for="textbox5">Regex [a-c|D-F]</label>
+        <input type="text" id="textbox5" />
+    </div>
+    <div>
+        <label for="textbox6">Max length 8 (allowing text and numbers)</label>
+        <textarea id="textbox6"></textarea>
+    </div>
+    <script>
+        $(function () {
+            // Default settings
+            $('#textbox1').inputfilter();
+            //Text only
+            $('#textbox2').inputfilter({
+                allowNumeric: false,
+                allowText: true
+            });
+            //Text and enter
+            $('#textbox3').inputfilter({
+                allowNumeric: false,
+                allowText: true,
+                allowEnter: true
+            });
+            //Custom chars !#.
+            $('#textbox4').inputfilter({
+                allowNumeric: false,
+                allowCustom: ['!','#','.']
+            });
+            //Regex [a-c|D-F]
+            $('#textbox5').inputfilter({
+                allowNumeric: false,
+                regex: '[a-c|D-F]'
+            });
+            //Max length 8 (allowing text, enter and numbers)
+            $('#textbox6').inputfilter({
+                allowNumeric: true,
+                allowText: true,
+                maxLength: 8
+            });
+        });
+    </script>
+</body>
+</html>
