@@ -1,0 +1,23 @@
+﻿body {
+}
+
+header {
+    margin: 0 auto;
+    min-width:300px;
+    max-width:403px;
+}
+
+div.body-content {
+    width:300px;
+    margin:0 auto;
+    border-left:1px solid grey;
+    border-right:1px solid grey;
+    padding:0 10px;
+}
+div.body-content > div {
+    margin: 5px 0 0 0;
+}
+label {
+    display:block;
+
+}
