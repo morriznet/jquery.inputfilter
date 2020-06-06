@@ -1,11 +1,11 @@
-#jquery.inputfilter
+# jquery.inputfilter
 
 jQuery plugin for adding filters to forms input and textarea, like numeric input only.
 
-##Demo
+## Demo
 [Simple demo](http://www.morriz.net/demo/jquery.inputfilter/examples/Index.html)
 
-##Usage
+## Usage
 Include *jquery.inputfilter.js* after jQuery (1.7+) and set it to the objects you want to filter
 ```
 <form>
@@ -23,7 +23,7 @@ Include *jquery.inputfilter.js* after jQuery (1.7+) and set it to the objects yo
 </script>
 ```
 
-##Options
+## Options
 ```
 var options = {
     allowNumeric: true, // is numbers allowed [0-9]
@@ -36,6 +36,6 @@ var options = {
 }
 ```
 
-##License
+## License
 Copyright &copy; 2015 Anders Fj&auml;llstr&ouml;m, licensed under the MIT License 
 
